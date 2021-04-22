@@ -6,11 +6,23 @@
 
 body {
     font-family: 'Nerko One', sans-serif;
+    font-size: 20px;
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+    /* height: 100%; */
+    overflow: hidden;
+    height: 100vh;
 }
 
 .container {
     width: 100%;
     height: 100%;
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+
 }
 
 .navbar {
@@ -59,4 +71,10 @@ section {
 
 section#home {
     background: url('../images/motorcycle.gif') no-repeat center center/cover;
+}
+
+section h1 {
+    font-family: bignoodletitling;
+    font-size: 4rem;
+    color: #fff;
 }
